@@ -1,1 +1,3 @@
 data/target.txt
+/.vscode
+*out.tfevents*

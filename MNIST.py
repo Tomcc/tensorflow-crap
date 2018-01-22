@@ -103,7 +103,7 @@ def main(_):
     loss = tf.reduce_mean(
         tf.nn.softmax_cross_entropy_with_logits(labels=labels, logits=lastLayer))
 
-    #add reguçlarization
+    #add regularization
     if L2_REGULARIZATION_FACTOR > 0:
         for w in weights:
             loss = loss + L2_REGULARIZATION_FACTOR * tf.nn.l2_loss(w)
